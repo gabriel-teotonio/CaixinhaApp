@@ -1,8 +1,9 @@
+import { BrowserRouter } from "react-router-dom"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle } from "./GlobalStyle"
-import { Header } from "./components/Home/Header/header"
-import { Main } from "./components/Main"
-import { BrowserRouter } from 'react-router-dom'
+import { RoutesApp } from "./routes/routes"
+import Aside from './components/Home/Aside/aside'
+import { Login } from "./pages/Login"
 
 const cores = {
   primaryColor:'rgba(76, 5, 131, 1)',
@@ -11,14 +12,14 @@ const cores = {
 }
 
 function App() {
-  return (
+  return (  
     <ThemeProvider theme={cores}>
-      <BrowserRouter>
-        <Header />
-        <Main />
-        
+      <div className="App">
+        <BrowserRouter>
+            <RoutesApp />
+        </BrowserRouter>
         <GlobalStyle />
-      </BrowserRouter>
+      </div>
     </ThemeProvider>
   )
 }

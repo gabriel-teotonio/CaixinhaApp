@@ -1,14 +1,14 @@
 import React from 'react'
-import { sidebarData } from '../../../Data/data'
 import * as C from "./style"
+import { sidebarData } from '../../../Data/data'
 import { BsBoxArrowInRight } from 'react-icons/bs'
-import { Link, NavLink } from 'react-router-dom'
-import styled from 'styled-components'
+import { Link, NavLink } from 'react-router-dom'  
 
 
 function Aside() {
   return (
     <C.Container>
+      <h1>Caixinha</h1>
         <C.Menu>
             {sidebarData.map((item, index) => (
                 <C.MenuItem key={index}>
@@ -16,7 +16,7 @@ function Aside() {
                           <item.icon />
                           <span>{item.heading}</span>
                       </NavLink>
-                </C.MenuItem>
+                </C.MenuItem> 
             ))}
                 <C.MenuItem>
                   <Link to="#">

@@ -21,4 +21,9 @@ export const GlobalStyle = createGlobalStyle`
     ul{
         list-style: none;
     }
+    .App{
+        display: grid;
+        grid-template-columns: 12rem auto;
+        height: 100vh;
+    }
 `

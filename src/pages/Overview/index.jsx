@@ -3,7 +3,7 @@ import React from 'react'
 export const Overview = () => {
   return (
     <>
-        <h2>Overview</h2>
+        <h1>Overview</h1>
     </>
   )
 }
