@@ -8,6 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     }
     body{
         font-family: sans-serif;
+        width: 100%;
+        height: 100vh;
+        background-color: #eff3ff;
     }
 
     a{
@@ -20,10 +23,5 @@ export const GlobalStyle = createGlobalStyle`
     }
     ul{
         list-style: none;
-    }
-    .App{
-        display: grid;
-        grid-template-columns: 12rem auto;
-        height: 100vh;
     }
 `

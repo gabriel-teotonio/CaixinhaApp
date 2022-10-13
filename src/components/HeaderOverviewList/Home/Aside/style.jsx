@@ -4,13 +4,28 @@ import styled from "styled-components";
 export const Container = styled.aside`
     background-color: ${props => props.theme.primaryColor};
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
 `
+
+export const Logo = styled.a`
+    display: flex;
+    color: white;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 2rem;
+    }
+`
+
 export const Menu = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: .5rem;
-    height: 100%;
+    height: 100%;   
+    margin-top: 1.5rem;
 ` 
 export const MenuItem = styled.li`
     a{

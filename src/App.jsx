@@ -14,12 +14,10 @@ const cores = {
 function App() {
   return (  
     <ThemeProvider theme={cores}>
-      <div className="App">
         <BrowserRouter>
             <RoutesApp />
         </BrowserRouter>
         <GlobalStyle />
-      </div>
     </ThemeProvider>
   )
 }

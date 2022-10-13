@@ -6,23 +6,36 @@ import { RiUserSharedFill,  } from 'react-icons/ri'
 
 export const sidebarData = [
     {
-        path: '/Overview',
+        path: 'Inicio',
         icon: MdSpaceDashboard,
         heading:'Overview'
     },
     {
-        path: '/Users',
+        path: 'Usuarios',
         icon: HiUsers,
         heading:'Usuários'
     },
     {
-        path: '/Payments',
+        path: 'Pagamentos',
         icon: MdPayments,
         heading:'Pagamentos'
     },
     {
-        path: '/Loans',
+        path: 'Emprestimos',
         icon: RiUserSharedFill,
         heading:'Empréstimos'
+    }
+]
+
+export const headerOverviewData = [
+    {
+        icon:'',
+        TransactionMounth: 1200,
+        heading:'Pagamentos do mês'
+    },
+    {
+        icon:'',
+        TransactionMounth: 860,
+        heading:'Empréstimos do mês'
     }
 ]
