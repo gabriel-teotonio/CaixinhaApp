@@ -7,11 +7,11 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-        font-family: sans-serif;
+        font-family: 'Open Sans', sans-serif;
         width: 100%;
         height: 100vh;
         background-color: #eff3ff;
-    }
+    }   
 
     a{
         color: currentColor;

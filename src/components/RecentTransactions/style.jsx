@@ -10,10 +10,5 @@ export const RecentTransactionList = styled.ul`
         background-color: white;    
         border-radius: 4px;
 `
-export const RecentTransactionItem = styled.li`
-    border-bottom: #00000049 1px solid;
-    padding: 1rem;
-    &:last-child{
-        border: none;
-    }
-`
+
+export const HeadingRecentTransactions = styled.h2``

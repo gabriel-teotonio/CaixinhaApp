@@ -1,31 +1,19 @@
 import React from 'react'
+import { recentTransactionsData } from '../../Data/data'
 import * as C from './style'
+import { RecentTransactionItem } from '../RecentTransactionItem'
 
 export const RecentTransactions = () => {
   return (
     <C.Container>
-        <h2>Transações recentes</h2>
+        <C.HeadingRecentTransactions>Transações recentes</C.HeadingRecentTransactions>
         <C.RecentTransactionList>
-            <C.RecentTransactionItem>
-                <h5>jucelino kunkest</h5> 
-                <span>pagamento</span>
-            </C.RecentTransactionItem>
-            <C.RecentTransactionItem>
-                <h5>jucelino kunkest</h5> 
-                <span>pagamento</span>
-            </C.RecentTransactionItem>
-            <C.RecentTransactionItem>
-                <h5>jucelino kunkest</h5> 
-                <span>pagamento</span>
-            </C.RecentTransactionItem>
-            <C.RecentTransactionItem>
-                <h5>jucelino kunkest</h5> 
-                <span>pagamento</span>
-            </C.RecentTransactionItem>
-            <C.RecentTransactionItem>
-                <h5>jucelino kunkest</h5> 
-                <span>pagamento</span>
-            </C.RecentTransactionItem>
+            {recentTransactionsData.map((transaction, index) => (   
+                <RecentTransactionItem
+                key={index}
+                transaction={transaction}
+                />
+            ))}
         </C.RecentTransactionList>
     </C.Container>
   )

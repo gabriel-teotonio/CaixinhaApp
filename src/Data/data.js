@@ -39,3 +39,31 @@ export const headerOverviewData = [
         heading:'Empréstimos do mês'
     }
 ]
+
+export const recentTransactionsData = [
+    {
+        name: 'Jucelino kubikest',
+        typeTransaction:'payment',
+        valueTransaction: 60
+    },
+    {
+        name: 'Fernando veloz',
+        typeTransaction:'payment',
+        valueTransaction: 120
+    },
+    {
+        name: 'Jaqueline linguaruda',
+        typeTransaction:'loan',
+        valueTransaction: 200
+    },
+    {
+        name: 'Biro',
+        typeTransaction:'loan',
+        valueTransaction: 60
+    },
+    {
+        name: 'Rosa maria',
+        typeTransaction:'payment',
+        valueTransaction: 160
+    },
+]
