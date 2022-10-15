@@ -67,3 +67,19 @@ export const recentTransactionsData = [
         valueTransaction: 160
     },
 ]
+
+
+export const totalTransactionsData = [
+    {
+        headingTotal:'Total Caixinha',
+        valueTotalTransactions:1200
+    },
+    {
+        headingTotal:'Total Pagamentos',
+        valueTotalPayments:2000
+    },
+    {
+        headingTotal:'Total Empréstimos',
+        valueTotalLoans:800
+    },
+]

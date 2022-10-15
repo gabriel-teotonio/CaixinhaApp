@@ -10,4 +10,7 @@ export const HeaderOverview = styled.header`
 
 export const DashOverview = styled.div`
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 `

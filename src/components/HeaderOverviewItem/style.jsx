@@ -6,7 +6,7 @@ export const Container = styled.li`
         background-color: white;
         color: #000000a8;
         border-radius: 4px;  
-        box-shadow: #0c61ff1e 0 0 6px;
+        box-shadow: ${props => props.theme.secundaryShadow};
         width: 250px;
         max-width: 100%;
 `
